@@ -1,0 +1,40 @@
+.hero-gradient {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+
+.benefit-card {
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.process-step {
+    position: relative;
+}
+
+.process-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    width: 60px;
+    height: 2px;
+    background-color: #e5e7eb;
+}
+
+.pokemon-bg-pattern {
+    background-image: url('https://www.transparenttextures.com/patterns/pokeball.png');
+    background-repeat: repeat;
+    opacity: 0.05;
+}
+
+.partner-logo {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+}
